@@ -65,7 +65,19 @@ description: 说明技能做什么，以及何时使用。
 - 通用：按目标工具的能力引用或复制所需资源。
 - Pi：参见 [Pi 接入说明](adapters/pi/README.md)。根目录的 `package.json` 只提供安装入口，不限制资源被其他工具使用。
 
-当前仓库仅包含目录骨架和文档，尚未提供实际技能、角色或提示词。
+### 可用技能
+
+| 技能 | 用途 |
+| --- | --- |
+| [architecture-docs](skills/architecture-docs/SKILL.md) | 基于项目实际情况编写或更新系统架构文档，涵盖组件、接口、数据模型和开发约束 |
+
+Pi 安装本仓库后，可使用 `/skill:architecture-docs`，或附带要求，例如：
+
+```text
+/skill:architecture-docs 为当前项目更新架构文档，重点检查部署和故障处理设计
+```
+
+其他支持 Agent Skills 的工具可按各自的发现方式加载 `skills/architecture-docs/`。
 
 ## 安全
 
