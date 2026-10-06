@@ -1,0 +1,15 @@
+{
+  "name": "pokitpeng-ai-toolkit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Personal, tool-agnostic AI skills, agents, and prompts with optional tool adapters.",
+  "keywords": ["pi-package"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pokitpeng/ai-toolkit.git"
+  },
+  "pi": {
+    "skills": ["./skills"],
+    "prompts": ["./prompts/*.md"]
+  }
+}

@@ -1,0 +1,32 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+!.env.*.example
+auth.json
+*.pem
+*.key
+
+# Local AI runtime data (shared resources belong in the top-level directories)
+.pi/
+.claude/
+.codex/
+sessions/
+logs/
+*.log
+
+# Dependencies and generated files
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+dist/
+coverage/
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
